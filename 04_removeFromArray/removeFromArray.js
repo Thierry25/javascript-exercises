@@ -1,11 +1,3 @@
-// const removeFromArray = () => {
-//   //   arr.filter((data) => {
-//   //     data != arguments[0];
-//   //   });
-//   //   return arr;
-//   for (const arg of arguments) console.log(arg);
-// };
-
 function removeFromArray() {
   let arr = arguments[0];
   for (let i = 1; i < arguments.length; i++) {
