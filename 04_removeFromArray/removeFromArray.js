@@ -1,6 +1,18 @@
-const removeFromArray = function() {
+// const removeFromArray = () => {
+//   //   arr.filter((data) => {
+//   //     data != arguments[0];
+//   //   });
+//   //   return arr;
+//   for (const arg of arguments) console.log(arg);
+// };
 
-};
-
+function removeFromArray() {
+  let arr = arguments[0];
+  for (let i = 1; i < arguments.length; i++) {
+    const index = arr.indexOf(arguments[i]);
+    if (index !== -1) arr.splice(index, 1);
+  }
+  return arr;
+}
 // Do not edit below this line
 module.exports = removeFromArray;
