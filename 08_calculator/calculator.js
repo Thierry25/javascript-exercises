@@ -4,31 +4,19 @@ const add = (num1, num2) => num1 + num2;
 
 const subtract = (num1, num2) => num1 - num2;
 
-function sum(arr) {
+const sum = (arr) => {
   const value = arr.reduce((total, element) => {
     return total + element;
   }, 0);
   return value;
-}
+};
 
-// const sum = (arr) => {
-//   let sum = 0;
-//   arr.forEach((number) => (sum += number));
-//   return sum;
-// };
-
-function multiply(arr) {
+const multiply = (arr) => {
   const value = arr.reduce((total, element) => {
     return total * element;
   }, 1);
   return value;
-}
-
-// const multiply = (arr) => {
-//   let product = 1;
-//   arr.forEach((number) => (product *= number));
-//   return product;
-// };
+};
 
 const power = (base, exponent) => base ** exponent;
 
