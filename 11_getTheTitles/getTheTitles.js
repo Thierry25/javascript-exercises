@@ -1,8 +1,11 @@
+// Updated to use ES6 syntax
+
 const getTheTitles = (arr) => {
-  let titles = [];
-  for (const obj of arr) {
-    titles.push(obj["title"]);
-  }
+  const titles = arr.map((value) => value.title);
+  // let titles = [];
+  // for (const obj of arr) {
+  //   titles.push(obj["title"]);
+  // }
   return titles;
 };
 
